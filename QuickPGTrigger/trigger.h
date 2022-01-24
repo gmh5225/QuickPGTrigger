@@ -7,4 +7,4 @@
 
 /////////////////////////////////////////////////////
 //// declare function
-void TriggerByHookIDT1();
+void TriggerByPatchIDT1();

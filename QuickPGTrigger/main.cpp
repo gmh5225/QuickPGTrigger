@@ -7,7 +7,7 @@ NTSTATUS
 DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath) {
   DriverObject->DriverUnload = DrvUnload;
 
-  TriggerByHookIDT1();
+  TriggerByPatchIDT1();
 
   return STATUS_VIRUS_INFECTED;
 }

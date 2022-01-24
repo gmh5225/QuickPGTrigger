@@ -30,7 +30,7 @@ struct IDTENTRY64 {
 
 //////////////////////////////////////////////////////////////////////////////
 //// function
-void TriggerByHookIDT1() {
+void TriggerByPatchIDT1() {
   Idtr idtr = {};
   __sidt(&idtr);
   auto entries = reinterpret_cast<IDTENTRY64 *>(idtr.base);
